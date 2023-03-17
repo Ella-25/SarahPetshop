@@ -1,0 +1,540 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ /* Ctrl F para PESQUISAR */
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: #749c96;
+    color: aliceblue;
+ }
+
+ .simple_header {
+    padding: 12px 10px;
+    /*padding serve para espessura da cor e usamos o background para colocar a cor "3ecc7e" */
+    text-align: left;
+    background: #97d4c7;
+    color: rgb(31, 184, 135);
+    font-size: 18px;
+    /*font-size para o tamanho da fonte e o color para a cor da letra*/
+    float: none;
+ }
+
+ .icon_image {
+    position: relative;
+    float: center;
+    padding: 0;
+    vertical-align: text-top;
+ }
+
+ .navbar {
+    list-style: none;
+    vertical-align: text-top;
+    border: 0px solid #3ecf95;
+    float: left;
+ }
+
+ .navbar li {
+    position: relative;
+    vertical-align: text-top;
+    float: left;
+    border-right: 0px solid #c0c0c0;
+ }
+
+ .navbar li a {
+    /*Formatação normal do Link*/
+    color: rgb(27, 18, 156);
+    text-decoration: none;
+    /*especificamente para decoração do TEXTO*/
+    padding: 5px 10px;
+    display: block;
+ }
+
+ .navbar li a:hover {
+    /*link + : (a:) é o evento hover para passar o mouse!!*/
+    background: #97c8d4;
+    /*cor da caixa de texto*/
+    color: rgb(27, 18, 156);
+    box-shadow: 0 3px 10px 0 rgb(162, 190, 179);
+    -webkit-box-shadow: 0 3px 10px 0 rgb(255, 255, 255);
+    /*"luz" em baixo da caixa de texto*/
+    text-shadow: 0px 0px 5px rgb(141, 177, 245);
+ }
+
+ .navbar li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #97c8d4;
+    display: none;
+ }
+
+ .navbar li:hover ul,
+ .navbar li.over ul {
+    /*Hover é o processo de passar o mouse sobre*/
+    display:block;
+ }
+
+ .navbar li ul li {
+    border: 0px solid rgb(190, 162, 162);
+    display: block;
+    width: 150px;
+ }
+
+ .simple_footer {
+    padding: 20px;
+    text-align: left;
+    background: #ACBDBA;
+    color: rgb(46, 82, 67);
+    font-size: 18px;
+    float: none;
+ }
+
+ .cont_home_principal {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #e5e7e9
+ }
+
+ .cont_home_principal_table {
+    width: 100%;
+    margin-bottom: .5em;
+    table-layout: fixed;
+    text-align: justify;
+ }
+
+ .cont_home_principal table tr td {
+    border: 1px solid;
+    width: 425px;
+    height: 250px;
+ }
+
+
+ /* slider carousel 1 */
+
+ .slider {
+    display: block;
+    /* fica bloqueado, NÃO se movimenta */
+    height: 150px;
+    width: 350px;
+    margin: auto;
+    margin-top: 25px;
+    position: relative;
+ }
+
+ .slider li {
+    list-style: none;
+    position: absolute;
+ }
+
+ .slider img {
+    margin: auto;
+    height: 100%;
+    width: 88%;
+    vertical-align: top;
+    /* alinhamento vertical a partir do topo */
+ }
+
+ .slider input {
+    display: none;
+ }
+
+ .slider label {
+    background-color: #97c8d4;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    /* altura da imagem */
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+ }
+
+ .slider li:nth-child(1) label {
+    /* formata exclusivamente o li cujo label é o 1°. Diferença de 30px cada*/
+    left: 10px;
+ }
+
+ .slider li:nth-child(2) label {
+    left: 40px;
+ }
+
+ .slider li:nth-child(3) label {
+    left: 70px;
+ }
+
+ .slider li:nth-child(4) label {
+    left: 100px;
+ }
+
+ /* slider carousel 2 */
+
+ .slider2 {
+   display: block;
+   /* fica bloqueado, NÃO se movimenta */
+   height: 250px;
+   width: 500px;
+   margin: auto;
+   margin-top: 20px;
+   position: relative;
+}
+
+.slider li {
+   list-style: none;
+   position: absolute;
+}
+
+.slider img {
+   margin: auto;
+   height: 100%;
+   width: 88%;
+   vertical-align: top;
+   /* alinhamento vertical a partir do topo */
+}
+
+.slider input {
+   display: none;
+}
+
+.slider label {
+   background-color: #97c8d4;
+   bottom: 10px;
+   cursor: pointer;
+   display: block;
+   height: 10px;
+   /* altura da imagem */
+   position: absolute;
+   width: 10px;
+   z-index: 10;
+}
+
+.slider li:nth-child(5) label {
+   /* formata exclusivamente o li cujo label é o 1°. Diferença de 30px cada*/
+   left: 10px;
+}
+
+.slider li:nth-child(6) label {
+   left: 40px;
+}
+
+.slider li:nth-child(7) label {
+   left: 70px;
+}
+
+.slider li:nth-child(8) label {
+   left: 100px;
+}
+/* slider carousel 1 */
+
+.slider img {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.slider li input:checked~img {
+   opacity: 1;
+   visibility: visible;
+   z-index: 10;
+}
+
+/* Slider Carousel 3 */
+
+.slider3 {
+   display: block;
+   /* fica bloqueado, NÃO se movimenta */
+   height: 250px;
+   width: 500px;
+   margin: auto;
+   margin-top: 20px;
+   position: relative;
+}
+
+.slider li {
+   list-style: none;
+   position: absolute;
+}
+
+.slider img {
+   margin: auto;
+   height: 100%;
+   width: 88%;
+   vertical-align: top;
+   /* alinhamento vertical a partir do topo */
+}
+
+.slider input {
+   display: none;
+}
+
+.slider label {
+   background-color: #97c8d4;
+   bottom: 10px;
+   cursor: pointer;
+   display: block;
+   height: 10px;
+   /* altura da imagem */
+   position: absolute;
+   width: 10px;
+   z-index: 10;
+}
+
+.slider li:nth-child(9) label {
+   /* formata exclusivamente o li cujo label é o 1°. Diferença de 30px cada*/
+   left: 10px;
+}
+
+.slider li:nth-child(10) label {
+   left: 40px;
+}
+
+.slider li:nth-child(11) label {
+   left: 70px;
+}
+
+.slider li:nth-child(12) label {
+   left: 100px;
+}
+
+ .slider img {
+    opacity: 0;
+    visibility: hidden;
+ }
+
+ .slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+ }
+
+ .slider img {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.slider li input:checked~img {
+   opacity: 1;
+   visibility: visible;
+   z-index: 10;
+}
+
+ .cont_home_principal h1 {
+    color: #badfd7fb;
+    align-items: center;
+    text-align: center;
+ }
+
+ .row {
+    color: rgb(255, 255, 255);
+ }
+
+ h2 {
+    color: #badfd7fb;
+ }
+
+ .container_form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #add1c5;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+form textarea {
+	height: 150px;
+	resize: none;
+}
+
+form button {
+	display: block;
+	background-color: rgb(31, 184, 135);
+	color: #ffffff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+ 
+ /* Carousel */
+.carousel{
+   background-color: #749c96;
+   padding-top: 35px;
+   padding-bottom: 35px;
+ }
+ 
+ 
+ .gallery {
+   background: #c2e9e9;
+ }
+ 
+ .gallery-cell{ /* adicionando borda */
+   border-radius: 10px;
+ }
+ 
+ .gallery-cell a img{ /* adicionando borda */
+   border-radius: 10px;
+ }
+ 
+ .gallery-cell{
+   width: 66%;
+   height: 400px;
+   margin-right: -200px;
+ 
+   counter-increment: gallery-cell;
+ }
+ 
+ .gallery-cell{
+   width: 66%;
+   height: 400px;
+   margin-right: -200px;
+   
+   counter-increment: gallery-cell;
+ }
+ 
+ .gallery-cell{
+   width: 66%;
+   height: 400px;
+   margin-right: -200px;
+   
+   counter-increment: gallery-cell;
+ }
+ 
+ .gallery-cell{
+   width: 66%;
+   height: 400px;
+   margin-right: -200px;
+   
+   counter-increment: gallery-cell;
+ }
+ 
+ .gallery-cell{
+   width: 66%;
+   height: 400px;
+   margin-right: -200px;
+   
+   counter-increment: gallery-cell;
+ }
+ /* Fim carousel */
+ 
+ 
+ 
+ /* Cards de vendas */
+ .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     width: 350px;
+     margin: auto;
+     text-align: center;
+     font-family: arial;
+     background-color: #4d5352;
+   }
+   
+ 
+   
+   .card h1{
+     padding-top: 10px;
+     height: 80px;
+     
+   }
+
+
+
+   .card h1{
+     font-size: 15px;
+   }
+   
+   
+   .prince-2{
+     color: grey;
+     font-size: 15px;
+     text-decoration:line-through;
+     padding-bottom: 10px;
+   }
+   
+   
+   .price {
+     font-weight: bold;
+     color: #0ec5a7;
+     font-size: 22px;
+     padding-bottom: 10px;
+   }
+   
+   
+   .card button {
+     border: none;
+     outline: 0;
+     padding: 12px;
+     color: white;
+     background-color: #9ff1d9a4;
+     text-align: center;
+     cursor: pointer;
+     width: 100%;
+     font-size: 18px;
+     padding-bottom: 10px;
+   }
+   
+   
+   .card button:hover {
+     opacity: 0.7;
+     transition: 0.5s;
+   }
+ 
+   /* Fim Cards de vendas */
+ 
+ /* FIM Carousel + Album */
+
+ .flickity-page-dots .dot {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin: 10px 8px;
+   background: #5f5e5ec9;
+   border-radius: 50%;
+   opacity: .25;
+   cursor: pointer
+ }
+
+ .video-container {
+   position:relative;
+   padding-bottom: 56.25%; /* Proporção de aspecto 16:9 */
+   padding-left: 10%;
+   padding-right: 10%;
+   height: 0;
+   overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+   position: absolute;
+   top: 0;
+   left: 10;
+   width: 80%;
+   height: 80%;
+}
