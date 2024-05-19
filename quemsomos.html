@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A On.Zen acredita que autocuidado envolve escolhas diárias que promovam práticas importantes, como a terapia e o auto-conhecimento.">
-    <meta name="author" content="Grupo On Zen">
+        content="Na Petshop, você encontra tudo para seu pet querido. Com as melhores marcas e os melhores preços. Você compra online e recebe o seu pedido em casa.">
+    <meta name="author" content="Mirella">
     <meta name="keywords"
-        content="terapia online, meditação, zen, psicólogo online, auto cuidado, saúde mental">
+        content="pet-shop, pet, cão, gato, calopsita, piriquito, canário, tartaruga, peixes ornamentais">
     <meta name="robots" content="index, follow">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="content-languege" content="pt-br">
@@ -16,147 +16,119 @@
     <meta http-equiv="refresh" content="300">
 
     <!--CSS Bootstrap-->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!--Javascript Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <!--CSS Nativo-->
     <link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
-    <link rel="icon" type="Icones/yinyang.png" href="Icones/yinyang.png">
-    <title>OnZen - Terapia Online</title>
+    <link rel="icon" type="Icones/petshop.png" href="Icones/petshop.png">
+
+    <!--Javascript Nativo-->
+    <script src="script/scriptpets.js"></script>
+
+    <!-- link CSS e Javascript -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <title>Sarah Petshop</title>
 </head>
 
 <body>
-  <!--Início do Cabeçalho-->
-  <div class="cont_header">
-      <header class="simple_header">
-          <table>
-              <tr>
-                  <td>
-                      <a href="index.html" class="link_header">
-                          <img class="icon_image" width="290" height="100" src="Icones/onzen.png"></img>
-                      </a>
-                      &nbsp;
-                      &nbsp;
-                  </td>
-                  <nav>
-                      <td>
-                          <ul class="navbar">
-                              <li>
-                                  <a href="index.html" class="link_header">
-                                      <span class="ts-1">Home</span>
-                                  </a>
-                                  &nbsp;
-                                  &nbsp;
-                                  &nbsp;
-                              </li>
+    <!--Início do Cabeçalho-->
+    <div class="cont_header">
+        <header class="simple_header">
+            <table>
+                <tr>
+                    <td>
+                        <a href="index.html" class="link_header">
+                            <img class="icon_image" width="80" height="80" src="Icones/quemsomos.png"></img>
+                        </a>
+                        &nbsp;
+                        &nbsp;
+                    </td>
+                    <nav>
+                        <td>
+                            <ul class="navbar">
+                                <li>
+                                    <a href="index.html" class="link_header">
+                                        <span class="ts-1">Sarah Petshop</span>
+                                    </a>
+                                    &nbsp;
+                                    &nbsp;
+                                    &nbsp;
+                                </li>
 
-                              <li>
-                                  <a href="quemsomos.html" class="link_header">
-                                      <span class="ts-1">Quem Somos</span>
-                                  </a>
+                                <li>
+                                    <a href="#" class="link_header">
+                                        <span class="ts-1">Quem Somos</span>
+                                    </a>
 
-                                  &nbsp;
-                                  &nbsp;
-                                  &nbsp;
-                              </li>
+                                    &nbsp;
+                                    &nbsp;
+                                    &nbsp;
+                                </li>
 
-                              <li>
-                                  <a href="#" class="link_header">
-                                      <span class="ts-1">Planos</span>
-                                  </a>
-                                  &nbsp;
-                                  &nbsp;
+                                <li>
+                                    <a href="#" class="link_header">
+                                        <span class="ts-1">Pets</span>
+                                    </a>
+                                    &nbsp;
+                                    &nbsp;
 
-                                  <ul class="navbar">
-                                      <li><a href="pg_estudantil.html" class="link_header">Estudantil</a></li>
-                                      <li><a href="pg_corporativo.html" class="link_header">Corporativo</a></li>
-                                  </ul>
-                              </li>
-                              
-                              <li>
-                                  <a href="faleconosco.html" class="link_header">
-                                      <span class="ts-1">Fale Conosco</span>
-                                  </a>
-                                  &nbsp;
-                                  &nbsp;
-                              </li>
+                                    <ul class="navbar">
+                                        <li><a href="pg_cachorros.html" class="link_header">Cachorros</a></li>
+                                        <li><a href="pg_gatos.html" class="link_header">Gatos</a></li>
+                                        <li><a href="pg_aves.html" class="link_header">Aves</a></li>
+                                        <li><a href="pg_peixes.html" class="link_header">Peixes Ornamentais</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="parceiros.html" class="link_header">
+                                        <span class="ts-1">Parceiros</span>
+                                    </a>
+                                    &nbsp;
+                                    &nbsp;
+                                </li>
+
+                                <li>
+                                    <a href="faleconosco.html" class="link_header">
+                                        <span class="ts-1">Contatos</span>
+                                    </a>
+                                    &nbsp;
+                                    &nbsp;
+                                </li>
 
 
-
-                      </td>
-                      </ul>
-                  </nav>
-              </tr>
-          </table>
-      </header>
-  </div>
-  <!--Fim do Cabeçalho-->
-  <br>
-  <br>
-  <div class="container">
-    <div class="image">
-        <img src="imagens/ex3.png" alt="Descrição da Imagem">
+                        </td>
+                        </ul>
+                    </nav>
+                </tr>
+            </table>
+        </header>
     </div>
-    <div class="text">
-        <h2>Nosso objetivo é tornar a terapia acessível a todos, independentemente de onde estejam ou das suas circunstâncias. A plataforma conta com terapeutas e psiquiatras renomados disponíveis durante 24 horas, para sessões marcadas e/ou repentinas. Além disso, há vídeos comprometidos com os altos padrões de autoconhecimento de curtas minutagens</h2>
+    <!--Fim do Cabeçalho-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Início -->
+    <div id="video" class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gS70brYJFbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-
+    <!-- Fim -->
     
-</div>
-  <br>
-  <br>
-  <br>
-  <br>  
-<section class="profile-section">
-  <img src="imagens/psi.png" alt="Foto de Perfil do Terapeuta" class="profile-photo">
-  <div class="profile-info">
-      <h2>Dr. João Silva</h2>
-      <p>Dr. João Silva é um terapeuta licenciado com mais de 15 anos de experiência em psicologia clínica. Especializado em terapia cognitivo-comportamental, ele ajuda seus pacientes a enfrentar desafios como ansiedade, depressão e estresse. Dr. João acredita no poder transformador da terapia e trabalha para criar um ambiente acolhedor e seguro para todos os seus pacientes.</p>
-      <br>
-      <p>Se interessou pela prestação de serviços? Entre em contato conosco e saiba mais sobre planos, agendamentos e valores pelo link abaixo.</p>
-      <a href="faleconosco.html" class="btn btn-primary my-2"
-        target="_blank" rel="external">Fale Conosco</a>
-  </div>
-</section>
-
-<br>
-<br>
-<br>
-<br>
-
-<section class="profile-section2">
-  <img src="imagens/simbolo.png" alt="Foto de Perfil do Terapeuta" class="profile-photo">
-  <div class="profile-info">
-      <h2>Sou Psicólogo</h2>
-      <p>Você é um psicólogo apaixonado por ajudar os outros e está em busca de novas oportunidades para expandir sua prática? Nossa plataforma de terapia online está à procura de profissionais dedicados como você para se juntar à nossa equipe de terapeutas licenciados.</p>
-      <br>
-      <p>Entre em contato pelo link abaixo para conhecer a flexibilidade e conforto que a plataforma disponibiliza, além de informações sobre suporte administrativo, renda, parcerias e funcionamento da On Zen.</p>
-      <a href="faleconosco.html" class="btn btn-primary my-2"
-        target="_blank" rel="external">Fale Conosco</a>
-  </div>
-</section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <!--Início do Rodapé-->
-    <hr>
-    <div class="cont_footer">
-        <footer class="simple_footer">
-            <span>
-                &#169; On Zen - Terapia Online <!--Símbolo copyrigth-->
-                <a href="mailto:isabellaramossantos2@gmail.com">isabellaramossantos2@gmail.com</a>
-            </span>
-            <br>
-            <span>2024 - 2024. Todos os direitos reservados. Segurança e Privacidade.</span>
+
+        <div class="cont_footer">
+            <footer class="simple_footer">
+                <span>
+                    &#169; Mirella Morigene de Souza <!--Símbolo copyrigth-->
+                    <a href="mailto:mirella.msouza@senacsp.edu.br">mirella.msouza@senacsp.edu.br</a>
+                </span>
+                <br>
+                <span>2023 - 2023. Todos os direitos reservados. Segurança e Privacidade.</span>
 
 
 
@@ -168,9 +140,9 @@
 
 
 
-        </footer>
-    </div>
-    <!--Fim do Rodapé-->
+            </footer>
+        </div>
+        <!--Fim do Rodapé-->
 </body>
 
 </html>
